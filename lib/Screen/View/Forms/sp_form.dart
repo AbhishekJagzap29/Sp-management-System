@@ -140,6 +140,7 @@ class _SpVisitorFormScreenState extends State<SpVisitorFormScreen> {
                 child: ElevatedButton(
                   onPressed: () async {
                     await controller.submitForm(widget.visitorId);
+                    Navigator.pop(context, true);
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromRGBO(6, 51, 131, 1),
